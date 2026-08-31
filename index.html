@@ -30,29 +30,43 @@
 <body>
 
 <h1>LoopLockers Privacy Policy</h1>
-<p class="updated">Last updated 9 August 2026</p>
+<p class="updated">Last updated 1 September 2026</p>
 
 <p class="lede">
   LoopLockers does not collect, transmit, or store any of your personal
-  information. Everything you type into it stays on your iPhone — with two
-  exceptions, both of which only happen because you asked: a backup file you
-  export yourself, and a link you tap in a note. Both are described below.
+  information. Everything you type into it stays on your iPhone — with three
+  exceptions, each of which only happens because you asked: a backup file you
+  export yourself, a link you tap, and a link preview you asked the app to
+  fetch. All three are described below.
 </p>
 
 <h2>What we collect</h2>
 <p>
   Nothing. There is no account, no sign-in, no analytics, no advertising, no
-  crash reporting, and no third-party SDK of any kind in the app. LoopLockers
-  contains no networking code, so there is no server for your data to be sent
-  to — not ours, and not anyone else's.
+  crash reporting, and no third-party SDK of any kind in the app. There is no
+  LoopLockers server: we have nowhere to receive your data and no way to ask for
+  it.
+</p>
+<p>
+  The app makes exactly one kind of internet request, and only to a web address
+  you typed into it yourself. It is described under <em>Link previews</em> below,
+  it can be switched off, and nothing about you is sent with it.
 </p>
 
 <h2>What the app stores, and where</h2>
 <p>
   Your promises, shopping list, urgent items, the notes you add to any of them,
-  streak history, settings and counters are saved on your device only, in the
-  app's own private storage. That data is covered by your device's protections
-  and by your own encrypted iCloud or iTunes backups, if you make them.
+  the lists you make and the details on their rows, streak history, settings and
+  counters are saved on your device only, in the app's own private storage. That
+  data is covered by your device's protections and by your own encrypted iCloud
+  or iTunes backups, if you make them.
+</p>
+<p>
+  A row on a list can also carry a photograph. Choosing one copies it into the
+  app's own private storage as a file on your device; the original stays in your
+  photo library, untouched. LoopLockers asks for a picture through the standard
+  iOS photo picker, which means it never has access to your photo library — only
+  to the one image you hand it. Photos are never uploaded anywhere.
 </p>
 
 <h2>Notes, and links inside them</h2>
@@ -63,11 +77,12 @@
 <p>
   If a note contains a web address, an e-mail address or a phone number,
   LoopLockers shows it as a link so you can tap it. <strong>Tapping one hands the
-  address to Safari, Mail or Phone and leaves LoopLockers</strong> — that is the
-  one thing in the app that can reach the internet, it happens only when you tap,
-  and from that point you are talking to that website, not to us. LoopLockers
-  does not fetch the page, does not check the address, and never sees anything
-  that comes back. Whatever the site you visit does is covered by its own privacy
+  address to Safari, Mail or Phone and leaves LoopLockers</strong> — it happens
+  only when you tap, and from that point you are talking to that website, not to
+  us. LoopLockers does not fetch the page, does not check the address, and never
+  sees anything that comes back. Link previews, above, are a separate thing and
+  are never run on a note: the addresses in your notes are only ever read on your
+  device, to make them tappable. Whatever the site you visit does is covered by its own privacy
   policy, not this one.
 </p>
 <p>
@@ -75,10 +90,39 @@
   own text so they can be tapped, on your device, as the note is drawn.
 </p>
 
+<h2>Link previews</h2>
+<p>
+  A list made from a template can have a link on each row — a menu, a video, a
+  book. If you put one there, the app can ask that page for its title and its
+  thumbnail so the row shows what it is rather than a bare address.
+</p>
+<p>
+  <strong>Those requests go to the site that link belongs to, and to nobody
+  else.</strong> There are at most three of them: the page itself; that
+  service's own public preview API where it has one, which for a video or a song
+  is the only place the real title is published; and whichever address the page
+  gives for its picture, which is usually the same company's image server. They
+  carry nothing about you: no identifier, no account, no other content from the
+  app. They are ordinary requests for public pages, of the kind your browser
+  makes when you open one, and what comes back — a title, a picture — is written
+  onto that row on your device. We never see any of it. The site you
+  are asking will see that it was asked, and — as with any request to any site —
+  will see the network address your device is connecting from. That is exactly
+  what it would see if you opened the link in Safari yourself, and what it does
+  with it is covered by its own privacy policy, not this one.
+</p>
+<p>
+  It happens only for a link you put in a row's link field, and only when there
+  is something empty on that row for it to fill. <strong>Settings ▸ Your data ▸
+  Link previews</strong> turns it off completely, and with it off the app makes
+  no internet requests at all. Links inside a note are never fetched — see below.
+</p>
+
 <h2>Backups you make yourself</h2>
 <p>
   <strong>Settings ▸ Your data ▸ Save a backup</strong> writes everything the app
-  knows into a single JSON file and hands it to the iOS share sheet. Where that
+  knows — including any photographs on your rows — into a single JSON file and
+  hands it to the iOS share sheet. Where that
   file goes is entirely your choice — Files, AirDrop, a message, iCloud Drive —
   and it leaves the app only because you asked it to. LoopLockers does not upload
   it, does not keep a copy, and has nowhere to send one.
@@ -107,7 +151,7 @@
 <h2>Deleting your data</h2>
 <ul>
   <li>In the app: <strong>Settings ▸ Your data ▸ Start over</strong> erases every
-    promise, list, streak and counter immediately.</li>
+    promise, list, streak, counter and stored photograph immediately.</li>
   <li>Deleting the app removes all of its data from your device.</li>
   <li>Any backup file you exported is yours, wherever you put it. Deleting the
     app does not delete those, because the app never knew where they went.</li>
@@ -130,9 +174,17 @@
   the app's release notes.
 </p>
 
-<h2>Contact</h2>
+<h2>Support and contact</h2>
 <p>
-  Questions about this policy: <a href="mailto:iphowr1@gmail.com">iphowr1@gmail.com</a>
+  This is also LoopLockers' support page. For help with the app, to report
+  something broken, or to ask about anything written here, write to
+  <a href="mailto:iphowr1@gmail.com">iphowr1@gmail.com</a>.
+</p>
+<p>
+  There is no account to recover and no server that can be down: everything the
+  app knows is on your own device, which is the point of it. If something has
+  gone wrong, Settings ▸ Your data ▸ Save a backup will write the whole of it to
+  a file you can keep before anything else is tried.
 </p>
 
 <footer>
